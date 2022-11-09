@@ -18,6 +18,17 @@ console.log(getComputerChoice())
 
 console.log("TesT")
 console.log(Math.random()*100)
+//Player is asked to make choice 
+function playerselection(){
+    let playerselection=prompt("Rock, Paper, Sizors shoot")
+    //player enters choice
+    if (playerselection=="Rock","Paper","Scizzors")
+    {return playerselection}
+    else{console.log(playerselection, " is an invalid input" );}
+    //choice is checked to makes sure it is valid
+    //return playerselection
+}
+console.log(playerselection())
 
 /*
 Computer makes there choice
