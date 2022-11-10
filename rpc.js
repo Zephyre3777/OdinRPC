@@ -11,7 +11,7 @@ else if(computerChoice <= 66)
 {computerChoice="Paper"}
 
 else if(computerChoice <= 99)
-{computerChoice = "Sizorzs"}
+{computerChoice = "Sizorzzs"}
 return computerChoice
 }
 console.log(getComputerChoice())
@@ -19,16 +19,31 @@ console.log(getComputerChoice())
 console.log("TesT")
 console.log(Math.random()*100)
 //Player is asked to make choice 
-function playerselection(){
-    let playerselection=prompt("Rock, Paper, Sizors shoot")
+function getplayerselection(playerselection){
     //player enters choice
-    if (playerselection=="Rock","Paper","Scizzors")
+    playerselection=prompt("Rock, Paper, Sizzors shoot")
+    if (playerselection==="Rock"||
+        playerselection==="Paper"||
+        playerselection==="Scizzors")
     {return playerselection}
-    else{console.log(playerselection, " is an invalid input" );}
+    else{return playerselection+" is an invalid input" }
     //choice is checked to makes sure it is valid
     //return playerselection
 }
-console.log(playerselection())
+console.log(getplayerselection())
+
+function game(){
+    if (playerselection==="Rock")
+    {return(playerselection+ computerChoice)}
+    else if (playerselection==="Paper")
+    {}
+    else if (playerselection==="Scizzors")
+    {}
+}
+console.log(game())
+
+
+
 
 /*
 Computer makes there choice
@@ -39,6 +54,7 @@ Player enters there choice
 choice is checked to make sure it is valid
 
 Choices are compared and evaluated
+
 
 
 Results are shown
