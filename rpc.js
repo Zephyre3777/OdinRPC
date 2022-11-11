@@ -45,14 +45,14 @@ function game(){
     else if (playerselection==="Paper")
     {
         if  (computerChoice=== "Rock"){return playerselection+ " VS "+computerChoice+" Paper beats Rock, YOU WIN!!!"}
-        else if (computerChoice=== "Paper"){playerselection+ " VS "+computerChoice+" Thats a tie"}
-        else if (computerChoice=== "Scizzors"){playerselection+ " VS "+computerChoice+" Paper looses to scizzors, YOU LOST!!!"}
+        else if (computerChoice=== "Paper"){return playerselection+ " VS "+computerChoice+" Thats a tie"}
+        else if (computerChoice=== "Scizzors"){return playerselection+ " VS "+computerChoice+" Paper looses to scizzors, YOU LOST!!!"}
     }
     else if (playerselection==="Scizzors")
     {
-        if  (computerChoice=== "Rock"){playerselection+ " VS "+computerChoice+" Scizzors looses to Rock, YOU LOSE!!!"}
-        else if (computerChoice=== "Paper"){playerselection+ " VS "+computerChoice+" Sizzorse beats Paper, YOU WIN!!!"}
-        else if (computerChoice=== "Scizzors"){playerselection+ " VS "+computerChoice+ "Thats a tie"}
+        if  (computerChoice=== "Rock"){return playerselection+ " VS "+computerChoice+" Scizzors looses to Rock, YOU LOSE!!!"}
+        else if (computerChoice=== "Paper"){return playerselection+ " VS "+computerChoice+" Sizzorse beats Paper, YOU WIN!!!"}
+        else if (computerChoice=== "Scizzors"){return playerselection+ " VS "+computerChoice+ "Thats a tie"}
     }
 }
 console.log(game())
