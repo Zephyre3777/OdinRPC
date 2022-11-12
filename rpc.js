@@ -35,10 +35,11 @@ console.log("player choice"+getplayerselection())
 
 
 //choices are compared and evaluated
-function game(){
+function compare(){
+
     if (playerselection==="Rock")
-    {if (computerChoice=== "Rock"){return playerselection+" VS "+computerChoice+" Thats a Tie"}
-    else if (computerChoice=== "Paper"){return playerselection+" VS "+computerChoice+" Rock looses to Paper, YOU LOST!!!"}    
+    {if (computerChoice=== "Rock"){return "Round "+round+". "+playerselection+" VS "+computerChoice+" Thats a Tie"}
+    else if (computerChoice=== "Paper"){return playerselection+" VS "+computerChoice+" Rock looses to Paper, YOU LOST!!!"}  
     else if (computerChoice=== "Scizzors"){return playerselection+" VS "+computerChoice+" Rock beats Scizzors, YOU WIN!!!"}
 }
 
@@ -55,6 +56,13 @@ function game(){
         else if (computerChoice=== "Scizzors"){return playerselection+ " VS "+computerChoice+ "Thats a tie"}
     }
 }
+let round=0
+function game(){
+while(round<5){
+round++;
+console.log(round);
+console.log(compare());
+}}
 console.log(game())
 
 
