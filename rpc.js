@@ -58,7 +58,7 @@ function compare(){
 }
 let round=0
 function game(){
-while(round<5){
+for (round = 0; round < 5; round++) {
 round++;
 console.log(round);
 console.log(compare());
